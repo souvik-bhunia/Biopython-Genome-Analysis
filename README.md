@@ -1,70 +1,34 @@
-# BioPython Genome Sequence Analysis
+# Biopython-Based Genome Sequence Analysis
 
-A beginner-level bioinformatics mini-project developed while learning
-Python and Biopython.
+A Python-based workflow for parsing FASTA sequences, calculating nucleotide composition and GC content, validating sequence symbols, and exporting structured sequence statistics to CSV.
 
 ## Project Overview
 
-This project performs basic genome sequence analysis using FASTA files
-and Biopython.
+This project implements a sequence-level analysis workflow using Python and Biopython.
 
-The project was created to practice Python programming and fundamental
-bioinformatics concepts.
+The workflow processes multiple FASTA files and extracts quantitative statistics for each sequence record. The calculated results are organised into a structured Pandas DataFrame and exported as a CSV file for downstream analysis.
 
-## Features
+## Workflow
 
-- FASTA file parsing
-- Sequence length calculation
-- GC content calculation
-- Nucleotide composition
-- Genome length comparison
-- Basic DNA sequence validation
-- FASTA record information extraction
-
-## Technologies Used
-
-- Python
-- Biopython
-- FASTA
-- Visual Studio Code
-
-## Biopython Concepts Practiced
-
-- `SeqIO.read()`
-- `SeqRecord`
-- `Seq`
-- `gc_fraction()`
-- Sequence manipulation
-- Functions
-- Loops
-- Dictionaries
-
-## What I Learned
-
-Through this project I practiced:
-
-1. Reading FASTA files using Biopython.
-2. Working with `SeqRecord` objects.
-3. Extracting DNA sequences from records.
-4. Writing functions for biological calculations.
-5. Using loops and dictionaries to handle multiple sequences.
-6. Calculating GC content and sequence length.
-7. Performing basic sequence comparisons.
-
-## Future Improvements
-
-I plan to extend this project with:
-
-- Hamming distance
-- Sequence identity
-- Reverse complement analysis
-- ORF detection
-- Codon analysis
-- Pairwise sequence alignment
-- SNP/variation analysis
-
-## Author
-
-Souvik
-
-Biotechnology | Aspiring Bioinformatics / Genomics Professional
+```text
+FASTA files
+     │
+     ▼
+Biopython SeqIO
+     │
+     ▼
+Sequence-level analysis
+     │
+     ├── Sequence length
+     ├── A/T/G/C/N counts
+     ├── GC content
+     └── DNA symbol validation
+     │
+     ▼
+GC calculation verification
+     │
+     ▼
+Pandas DataFrame
+     │
+     ▼
+CSV output
