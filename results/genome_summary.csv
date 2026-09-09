@@ -1,0 +1,2 @@
+sequence_id,length_bp,A_count,T_count,G_count,C_count,N_count,GC_percent,unexpected_bases
+NZ_CP011343.2,4621656,1137317,1136317,1172451,1175571,0,50.8,
